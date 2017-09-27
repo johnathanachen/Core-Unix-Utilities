@@ -23,22 +23,32 @@ Challenges within each section are meant to be solved in order.
 1.  Navigate to a nested subdirectory, like `path/to/project`
     - `cd path/to/project`
 1.  Navigate to your home directory
-    - `~`
+    - `cd`
 1.  Navigate back to the previous directory
-    - `cd ...`
+    - `cd -`
 ### Variables
 
 1.  Print a sentence, like `Hello world`
+    - `Hello world`
 1.  Print a variable value, like `$USER` or `$PATH`
+    - `printf $USER`
 1.  Set a variable `NAME` equal to your first name, then print its value
+    - `set NAME=Johnathan; echo $NAME` not
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+    -  `set FULL_NAME=Johnathan_Chen; echo $FULL_NAME`
 1.  Print all environment variables (names and values)
+    -  `set`
 1.  Make an alias named `hello` that prints `Hello world`
+    - `alias hello='echo "Hello world"'`
 1.  Make an alias named `gocode` that navigates to your code directory
+    - `alias gocode='cd /Users/Johnathan/Desktop/Makeschool/Core-Unix-Utilities/`
 1.  Print all aliases (names and values)
-
+    - `alias`
 ### Getting Help
 
 1.  Print what options a command accepts, like `bash` or `python`
+    - `bash --help`
 1.  Read the manual for a command, like `echo` or `ls`
+    - `man echo`
 1.  Print the file path to a command, like `bash` or `python`
+    - `realpath bash`
