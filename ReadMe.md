@@ -91,23 +91,27 @@ Challenges within each section are meant to be solved in order.
 ### Files
 
 1.  Navigate to the directory `Animals`
+	- `cd Animals`
 1.  Print the contents of the file `Cats.txt`
+	- `cat Cats.txt`
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
-    - `head -n2`
+	- `cat Cats.txt Dogs.txt`
 1.  Count the words in the file `Cats.txt`
+	- `wc -w Cats.txt`
 1.  Count the words in all files with the extension `.txt`
-    - `ls | wc`
+	- `wc -w *.txt`
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
+	- `cp Dogs.txt BabyDogs.txt`
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
+	- `mv BabyDogs.txt Puppies.txt`
 1.  Make a new directory named `Shelter` inside `Animals`
+	- `mkdir Shelter`
 1.  Move the file `Puppies.txt` into the directory `Shelter`
+	- `mv Puppies.txt Shelter/Puppies.txt`
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
-    - `cp Cats.txt Shelter/Kittens.txt`
 1.  List the files within the directory `Shelter`
 1.  Count the words in all `.txt` files inside `Shelter`
-    - `wc Shelter/*.txt`
 1.  Try to remove the directory `Shelter` (this should fail)
-    - `rmdir Shelter/`
 1.  Remove all `.txt` files inside `Shelter`
 1.  Remove the directory `Shelter` (this should succeed)
 1.  Now cry because you just deleted those poor tiny animals
@@ -139,29 +143,54 @@ Challenges within each section are meant to be solved in order.
 1.  Print the contents of the file `test.txt`
     - `cat test.txt`
 1.  Print the contents of the file `numbers.txt`
+    - `cat Numbers/numbers.txt`
 1.  Print the first 10 lines in the file `numbers.txt`
-1.  Print the first 5 lines in the file `numbers.txt`
-1.  Print the last 10 lines in the file `numbers.txt`
-1.  Print the last 5 lines in the file `numbers.txt`
-1.  Print lines 6 through 10 in the file `numbers.txt`
-1.  Sort all lines in the file `numbers.txt`
-1.  Print the first 2 characters of each line in `numbers.txt`
-1.  Print only characters 9-16 of each line in `numbers.txt`
-1.  Sort the first 2 characters of each line in `numbers.txt`
-1.  Print only the unique first 2 characters of each line in `numbers.txt`
-1.  Replace all `o`s with `0`s in file `test.txt`
-1.  Capitalize all letters in the file `test.txt`
-1.  Capitalize all letters in the string `Hello world`
+    - `sed -n 1,10p numbers.txt`
 
+1.  Print the first 5 lines in the file `numbers.txt`
+    - `sed -n 1,5p  numbers.txt`
+1.  Print the last 10 lines in the file `numbers.txt`
+    - `tail -10  numbers.txt`
+1.  Print the last 5 lines in the file `numbers.txt`
+    - `tail -5  numbers.txt`
+1.  Print lines 6 through 10 in the file `numbers.txt`
+    - `sed -n 6,10p numbers.txt`
+1.  Sort all lines in the file `numbers.txt`
+    - `sort numbers.txt`
+1.  Print the first 2 characters of each line in `numbers.txt`
+    - ``
+1.  Print only characters 9-16 of each line in `numbers.txt`
+    - ``
+1.  Sort the first 2 characters of each line in `numbers.txt`
+    - ``
+1.  Print only the unique first 2 characters of each line in `numbers.txt`
+    - ``
+1.  Replace all `o`s with `0`s in file `test.txt`
+    - ``
+1.  Capitalize all letters in the file `test.txt`
+    - ``
+1.  Capitalize all letters in the string `Hello world`
+    - ``
 ### Search
 
+
 1.  Find the file named `Cats.txt` in the directory `Animals`
+    - ``
 1.  Find all files ending with `.py` in your code directory
+    - ``
 1.  Find all files larger than 100 MB in your movies directory
+    - ``
 1.  Find all lines containing the word `one` in the file `numbers.txt`
-1.  Find all lines containing the letter `e` at least 3 times in the file `numbers.txt`
+    - ``
+1.  Find all lines containing the letter `e` at least 3 times in   the file `numbers.txt`
+    - ``
 1.  Find the `search` function definition in a source code file
+    - ``
 1.  Find the `search` function definition in all source code files
+    - ``
 1.  Count the lines and words in all source code files
+    - ``
 1.  Find all U.S. zip codes in a file containing addresses
+    - ``
 1.  Find all U.S. zip codes in a file containing addresses
+    - ``
